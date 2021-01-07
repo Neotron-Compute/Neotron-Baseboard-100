@@ -274,20 +274,6 @@ F 7 "~" H 4925 7300 50  0001 C CNN "Manufacturer"
 	1    4925 7300
 	1    0    0    -1  
 $EndComp
-$Sheet
-S 4750 3025 1000 1000
-U 5FEF6B08
-F0 "SD Card" 50
-F1 "../common/Kicad/sdcard.sch" 50
-F2 "DAT2" B L 4750 3325 50 
-F3 "DAT3" B L 4750 3425 50 
-F4 "CMD" I L 4750 3525 50 
-F5 "CLK" I L 4750 3625 50 
-F6 "DAT0" B L 4750 3725 50 
-F7 "DAT1" B L 4750 3825 50 
-F8 "~CARD_DETECT" O L 4750 3125 50 
-F9 "~WRITE_PROTECT" O L 4750 3225 50 
-$EndSheet
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 60A5B22E
@@ -375,16 +361,16 @@ $EndComp
 $Comp
 L Neotron-Common-Hardware:Neotron-CPU U101
 U 5 1 60173DE6
-P 3950 3325
-F 0 "U101" H 4450 3675 50  0000 R CNN
-F 1 "Neotron-CPU" H 3450 3675 50  0000 L CNN
-F 2 "Neotron-Common-Hardware:Neotron_CPU_Socket" H 4050 3875 50  0001 C CNN
-F 3 "https://github.com/neotron-compute" H 4850 3425 50  0001 C CNN
-F 4 "1" H 3950 3325 50  0001 C CNN "DNP"
-F 5 "~" H 3950 3325 50  0001 C CNN "Digikey"
-F 6 "~" H 3950 3325 50  0001 C CNN "MPN"
-F 7 "~" H 3950 3325 50  0001 C CNN "Manufacturer"
-	5    3950 3325
+P 4000 3400
+F 0 "U101" H 4500 3750 50  0000 R CNN
+F 1 "Neotron-CPU" H 3500 3750 50  0000 L CNN
+F 2 "Neotron-Common-Hardware:Neotron_CPU_Socket" H 4100 3950 50  0001 C CNN
+F 3 "https://github.com/neotron-compute" H 4900 3500 50  0001 C CNN
+F 4 "1" H 4000 3400 50  0001 C CNN "DNP"
+F 5 "~" H 4000 3400 50  0001 C CNN "Digikey"
+F 6 "~" H 4000 3400 50  0001 C CNN "MPN"
+F 7 "~" H 4000 3400 50  0001 C CNN "Manufacturer"
+	5    4000 3400
 	-1   0    0    -1  
 $EndComp
 $Sheet
@@ -903,22 +889,6 @@ F3 "I2C_SDA" B L 7350 2150 50
 F4 "I2C_SCL" I L 7350 2250 50 
 F5 "~IRQ" O L 7350 2350 50 
 $EndSheet
-Wire Wire Line
-	4650 3125 4750 3125
-Wire Wire Line
-	4750 3225 4650 3225
-Wire Wire Line
-	4650 3325 4750 3325
-Wire Wire Line
-	4750 3425 4650 3425
-Wire Wire Line
-	4650 3525 4750 3525
-Wire Wire Line
-	4750 3625 4650 3625
-Wire Wire Line
-	4650 3725 4750 3725
-Wire Wire Line
-	4750 3825 4650 3825
 Wire Wire Line
 	7350 2150 7000 2150
 Wire Wire Line
@@ -1540,6 +1510,36 @@ Text Label 2150 3975 2    50   ~ 0
 ~RESET
 Text Label 2025 1075 0    50   ~ 0
 R0
+$Sheet
+S 4900 3100 710  905 
+U 5FEF6B08
+F0 "SD Card" 50
+F1 "../common/Kicad/sdcard.sch" 50
+F2 "DAT2" B L 4900 3900 50 
+F3 "DAT3" B L 4900 3800 50 
+F4 "CMD" I L 4900 3700 50 
+F5 "CLK" I L 4900 3600 50 
+F6 "DAT0" B L 4900 3500 50 
+F7 "DAT1" B L 4900 3400 50 
+F8 "~CARD_DETECT" O L 4900 3200 50 
+F9 "~WRITE_PROTECT" O L 4900 3300 50 
+$EndSheet
+Wire Wire Line
+	4700 3200 4900 3200
+Wire Wire Line
+	4900 3300 4700 3300
+Wire Wire Line
+	4700 3400 4900 3400
+Wire Wire Line
+	4900 3500 4700 3500
+Wire Wire Line
+	4700 3600 4900 3600
+Wire Wire Line
+	4900 3700 4700 3700
+Wire Wire Line
+	4700 3800 4900 3800
+Wire Wire Line
+	4900 3900 4700 3900
 Wire Bus Line
 	3950 750  3950 1475
 Wire Bus Line
