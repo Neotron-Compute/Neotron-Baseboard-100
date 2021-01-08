@@ -1288,7 +1288,7 @@ Wire Wire Line
 Wire Wire Line
 	7150 3650 6750 3650
 Text Notes 7200 1450 0    50   ~ 0
-Slot 4
+Slot 6
 Wire Wire Line
 	3400 4700 3800 4700
 Wire Wire Line
@@ -1544,4 +1544,6 @@ Wire Bus Line
 	3950 750  3950 1475
 Wire Bus Line
 	1900 750  1900 2175
+Text Notes 9700 7050 0    50   ~ 0
+I2C Addressing\n* 0x1A : TLV320AIC23B Audio Codec\n* 0x50..0x57: ATC256 EEPROMs\n* 0x6F: MCP7940N RTC\n* 0x30: STM32F0 BMC\n
 $EndSCHEMATC
