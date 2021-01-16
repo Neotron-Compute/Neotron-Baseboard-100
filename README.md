@@ -37,20 +37,8 @@ You must fit a Neotron CPU card for this board to function (or attach a microcon
 * 3.3V TTL on the MCU side
 * RS-232 signalling on a 9-pin D-Sub connector (or 10-pin IDC box header), wired DTE
 
-### USB
-
-* Four port High-speed USB2.0 hub
-* Two USB Type-A ports
-* 8-pin PC case style USB pin-header
-* Each port limited to 500mA with over-current protection
-
-### Ethernet
-
-* 10/100base-T Ethernet
-* Ethernet MAC/PHY with SPI connection to main CPU
-* Link and Activity LEDs
-
 ### Board Management Controller
+
 * ST Micro STM32F0 (STM32F030F4P6) microcontroller
   * 32-bit Arm Cortex-M0+ Core
   * 3.3V I/O
@@ -240,6 +228,7 @@ The pin functions are:
 Why not design and build your own expansion card? You could try designing:
 
 * A dual Atari/SEGA 9-pin Joypad Interface
+* An Ethernet card, e.g. with an ENC28J60 SPI/Ethernet interface IC
 * A Mikro Eletronika Click adaptor, allow many of the range of [Click board](https://www.mikroe.com/click) to be fitted
 * A Wi-Fi/Bluetooth card, using an Espressif ESP32
 * A second processor card - perhaps with a RISC-V microcontroller, or classic Zilog Z80
